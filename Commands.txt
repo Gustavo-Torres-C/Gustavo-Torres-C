@@ -25,3 +25,4 @@ git reset --hard <codigo do commit> = voltar para uma versão específica
 git checkout <nome da branch> = mudar de uma branch para outra
 git merge <nome da branch que você quer puxar as atualizações>
 git branch -a = listar todas as branchs do repositório remoto
+git stage
