@@ -1,5 +1,0 @@
-git checkout -b master
-
-# add commit
-
-git push origin master
