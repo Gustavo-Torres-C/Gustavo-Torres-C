@@ -1,5 +1,27 @@
 git add
 git diff
-git commit
+git commit -m "add new title"
 git status
 git rm
+git log 
+git restore (staged ou modified/unmodified)
+git remote
+git push xxxx master
+git pull
+git fetch
+
+
+
+
+
+git init =  inicia um reposositorio vazio
+git branch -M master = define a branch master
+git commit -m "descricao" = cria um pacote de modificações pronto para dar push e enviar para o remoto
+git remote add origin "o link do repositorio criado no github" = define o local do remoto
+git push -u origin <nome da branch> = joga o commit para a branch no repositorio remoto.
+git pull origin master = puxa todas as configurações e modificações que estão na branch master do remoto (git hub)
+git branch <nome da branch> = criar uma nova branch
+git reset --hard <codigo do commit> = voltar para uma versão específica
+git checkout <nome da branch> = mudar de uma branch para outra
+git merge <nome da branch que você quer puxar as atualizações>
+git branch -a = listar todas as branchs do repositório remoto
