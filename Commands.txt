@@ -2,13 +2,15 @@ git add
 git diff
 git commit -m "add new title"
 git status
-git rm
+git rm (remove)
 git log 
 git restore (staged ou modified/unmodified)
 git remote
 git push xxxx master
 git pull
 git fetch
+git checkout (branch)
+git merge
 
 
 
@@ -25,4 +27,3 @@ git reset --hard <codigo do commit> = voltar para uma versão específica
 git checkout <nome da branch> = mudar de uma branch para outra
 git merge <nome da branch que você quer puxar as atualizações>
 git branch -a = listar todas as branchs do repositório remoto
-git stage
