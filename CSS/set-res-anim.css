@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+}
+h1{
+    font-size: 9.6rem;
+    text-align: center;
+    text-decoration: underline;
+    background-color: lightblue;
+    color: black;
+}
+
+table thead{
+    background-color: steelblue;
+    color: white;
+}
+
+table tr:nth-child(2n+2){
+    background-color: #aaa;
+}
+
+table, td, th, thead, tbody{
+    border: 3px solid black;
+}
+
+table{
+    font-size: 2.5rem;
+    border-collapse: separate;
+}
+
+
+a{
+    background: steelblue;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 2.4rem;
+    font-size: 2.8rem;
+    cursor: pointer;
+    width: 80%;
+    text-decoration: none;
+    display: block;
+    transition: all .2s ease-in-out, background-color 1s ease-in-out;
+    margin: auto;
+    text-align: center;
+}
+
+[data-anchor="products"]:hover{
+    transform: scale(1.2);
+    background-color: aqua;
+    color: red;
+}
+
+[data-anchor="team"]{
+    margin-top: 2rem;
+    animation: pulse 2s infinite;
+    transform: scale(1);
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.35);
+        opacity: .6;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.spinner-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    animation: load 1s infinite;
+}
+
+@keyframes Load{
+    0%{
+       transform: rotateZ(0deg);
+    }
+    40%{
+        transform: rotateZ(240deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.fa-spinner{
+    margin-top: 3rem;
+    margin: 4rem;
+}
+
+/* [data-company="GCO"]{
+    background-color: red;
+} */
+
+@media screen and (min-width: 1000px) {
+    .bg {
+        height: 50vh;
+        color: green;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 999px) {
+    .bg {
+        height: 80vh;
+        color: red;
+    }
+}
+
+@media print{
+    .bg{
+        display: none;
+    }
+}
+
+.bg {
+    height: 50.0rem;
+    width: 100%;  
+    background-color: grey;
+    background-image: url(https://images.unsplash.com/photo-1683009427540-c5bd6a32abf6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
